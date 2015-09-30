@@ -1,4 +1,4 @@
-# TargetRoasBiddingScheme [Non-BiddingStrategyService]
+# TargetRoasBiddingScheme [Non-BiddingStrategyService] 
 TargetRoasBiddingScheme object displays Auto Bidding setting for Target ROAS. (This is for services other than BiddingStrategyService)
 ### Service
 + [AdGroupService](../services/AdGroupService.md)

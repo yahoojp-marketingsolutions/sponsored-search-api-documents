@@ -6,6 +6,7 @@ If BUDGET_OPTIMIZER is selected for BiddingStrategyType, the maximum bid for AdG
 
 | Field | Data Type | Description | Restrictions | 
 |---|---|---|---|
+
 | AdGroupBid(inherited)||||||
 | type| enum <a href="./BiddingStrategyType.md">BiddingStrategyType</a>| Bidding Strategy type.| -| -| - |
 | BudgetOptimizerAdGroupBid||||||

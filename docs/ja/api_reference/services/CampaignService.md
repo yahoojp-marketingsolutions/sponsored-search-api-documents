@@ -3,8 +3,8 @@ CampaignServiceでは、キャンペーンに関する情報の取得および�
 #### WSDL
 | environment | url |
 |---|---|
-| production  | https://ss.yahooapis.jp/services/V5.2/CampaignService?wsdl|
-| sandbox  | https://sandbox.ss.yahooapis.jp/services/V5.2/CampaignService?wsdl|
+| production  | https://ss.yahooapis.jp/services/V5.1/CampaignService?wsdl|
+| sandbox  | https://sandbox.ss.yahooapis.jp/services/V5.1/CampaignService?wsdl|
 #### Namespace
 http://ss.yahooapis.jp/V5
 #### サービス概要

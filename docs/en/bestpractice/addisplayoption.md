@@ -358,7 +358,7 @@ For this example, each Ad Display Option will be added to the account of company
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
-#### 2. Setting to Campaign
+#### 2.	Setting to Campaign
 FeedItem will be set to campaign using CampaignFeedService.   
 For this example, QuickLink[No.1-4] and CallExtension[No.1] will be set to campaign.  
 ##### <Request Sample>

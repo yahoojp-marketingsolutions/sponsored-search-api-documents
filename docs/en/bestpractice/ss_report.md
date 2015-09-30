@@ -473,6 +473,7 @@ It requires the following:
 Use mutate:add of ReportServiceのmutate:add.  
 Creates report from designated ReportID.
 *This process is not necessary for Scheduled Report.  
+
 ##### Request Sample
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

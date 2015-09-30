@@ -1,4 +1,4 @@
-# TargetRoasBiddingScheme [BiddingStrategyService]
+# TargetRoasBiddingScheme [BiddingStrategyService] 
 TargetRoasBiddingScheme object displays Auto Bidding setting for Target ROAS. (This is for BiddingStrategyService)
 ### Service
 + [BiddingStrategyService](../services/BiddingStrategyService.md)

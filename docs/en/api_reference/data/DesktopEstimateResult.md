@@ -7,7 +7,7 @@ DesktopEstimateResult object shows the result of the traffic estimate for the de
 |---|---|---|
 | type| enum <a href="../data/EstimateResultType.md">EstimateResultType</a>| Device type |
 | keyword| xsd:string| Keywords |
-| matchType| enum <a href="../data/KeywordMatchType.md">KeywordMatchType</a>| Match type |
+| matchType| enum KeywordMatchType| Match type |
 | bid| xsd:long| Number of bid |
 | impressions| xsd:double| Impression estimation |
 | clicks| xsd:double| Click estimation |

@@ -12,7 +12,7 @@ PageOnePromotedBiddingSchemeオブジェクトは、検索結果ページの目�
 | biddingStrategyType| enum <a href="../data/BiddingStrategyType.md">BiddingStrategyType</a>| 自動入札タイプです。| ─| ─| ─ |
 | PageOnePromotedBiddingScheme||||||
 | targetPositionType| enum <a href="../data/TargetPositionType.md">TargetPositionType</a>| 掲載場所です。| ─| ─| ─ |
-| bidCeiling| xsd:long| 入札価格の上限です。（0?50000）<br>※「0」が設定された場合、上限設定はありません。| ─| ─| ─ |
+| bidCeiling| xsd:long| 入札価格の上限です。（0～50000）<br>※「0」が設定された場合、上限設定はありません。| ─| ─| ─ |
 | bidMultiplier| xsd:double| 入札価格調整率です。<br>※0.10 〜10.00（-90%〜+900%）の範囲内のみ許容します。| ─| ─| ─ |
 | bidChangesForRaisesOnly| enum <a href="../data/BidChangesForRaisesOnly.md">BidChangesForRaisesOnly</a>| 入札価格の自動・手動設定です。| ─| ─| ─ |
 | raiseBidWhenBudgetConstrained| enum <a href="../data/RaiseBidWhenBudgetConstrained.md">RaiseBidWhenBudgetConstrained</a>| 予算消化による広告掲載機会制限時の入札価格の引き上げ設定です。| ─| ─| ─ |

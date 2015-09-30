@@ -1,5 +1,5 @@
 # DisapprovalReasonSelector
-DisapprovalReasonSelectorobject is a containter for EditorialReason list.
+DisapprovalReasonSelector object is a containter for EditorialReason list.
 ### Service
 + [DictionaryService](../services/DictionaryService.md)
 

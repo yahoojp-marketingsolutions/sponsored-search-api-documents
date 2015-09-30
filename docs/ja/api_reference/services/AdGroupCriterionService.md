@@ -3,8 +3,8 @@ AdGroupCriterionServiceでは、広告グループに関するターゲット条
 #### WSDL
 | environment | url |
 |---|---|
-| production  | https://ss.yahooapis.jp/services/V5.2/AdGroupCriterionService?wsdl|
-| sandbox  | https://sandbox.ss.yahooapis.jp/services/V5.2/AdGroupCriterionService?wsdl|
+| production  | https://ss.yahooapis.jp/services/V5.1/AdGroupCriterionService?wsdl|
+| sandbox  | https://sandbox.ss.yahooapis.jp/services/V5.1/AdGroupCriterionService?wsdl|
 #### Namespace
 http://ss.yahooapis.jp/V5
 #### サービス概要

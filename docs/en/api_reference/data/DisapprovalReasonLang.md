@@ -1,5 +1,5 @@
 # DisapprovalReasonLang
-DisapprovalReasonLang　object specifies language of the EditorialReason list.
+DisapprovalReasonLang object specifies language of the EditorialReason list.
 ### Service
 + [DictionaryService](../services/DictionaryService.md)
 

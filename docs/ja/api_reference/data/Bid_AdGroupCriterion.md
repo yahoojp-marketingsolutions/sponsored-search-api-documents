@@ -5,7 +5,7 @@ Bidオブジェクトは、入札価格を表示します。（AdGroupCriterionS
 
 | フィールド | データ型 | 説明 | ADD | SET | REMOVE | 
 |---|---|---|---|---|---|
-| maxCpc| xsd:long| キーワード入札価格です。（1-50000）<br>※maxCpcが「0」の場合は、設定なしと同様です。| Opt| Opt<br>                    (updatable)| - |
+| maxCpc| xsd:long| キーワード入札価格です。（1 ～ 50000）<br>※maxCpcが「0」の場合は、設定なしと同様です。| Opt| Opt<br>                    (updatable)| - |
 | bidSource| enum <a href="../data/BidSource.md">BidSource</a>| 入札価格ソースです。| -| -| - |
 | adGroupMaxCpc| xsd:long| 広告グループ入札価格です。| -| -| - |
 | keywordMaxCpc| xsd:long| キーワード入札価格です。| -| -| - |

@@ -5,8 +5,8 @@ ReportDefinitionServiceでは、レポート定義の取得および追加・更
 #### WSDL
 | environment | url |
 |---|---|
-| production  | https://ss.yahooapis.jp/services/V5.2/ReportDefinitionService?wsdl|
-| sandbox  | https://sandbox.ss.yahooapis.jp/services/V5.2/ReportDefinitionService?wsdl|
+| production  | https://ss.yahooapis.jp/services/V5.1/ReportDefinitionService?wsdl|
+| sandbox  | https://sandbox.ss.yahooapis.jp/services/V5.1/ReportDefinitionService?wsdl|
 #### Namespace
 http://ss.yahooapis.jp/V5
 #### サービス概要
@@ -42,17 +42,17 @@ ReportDefinitionServiceで提供される操作を説明します。
  xmlns:ns1="http://ss.yahooapis.jp/V5">
     <SOAP-ENV:Header>
         <ns1:RequestHeader>
-            <ns1:license>xxxxxxxxxxxxxxx</ns1:license>
-            <ns1:apiAccountID>xxxxxxxxxxxxxxxxxx</ns1:apiAccountID>
+            <ns1:license>xxxx-xxxx-xxxx-xxxx</ns1:license>
+            <ns1:apiAccountID>xxxx-xxxx-xxxx-xxxx</ns1:apiAccountID>
             <ns1:apiAccountPassword>passwd</ns1:apiAccountPassword>
         </ns1:RequestHeader>
     </SOAP-ENV:Header>
     <SOAP-ENV:Body>
         <ns1:get>
             <ns1:selector>
-                <ns1:accountId>100000001</ns1:accountId>
-                <ns1:reportIds>11522</ns1:reportIds>
-                <ns1:reportIds>100000003</ns1:reportIds>
+                <ns1:accountId>00000001</ns1:accountId>
+                <ns1:reportIds>00000005</ns1:reportIds>
+                <ns1:reportIds>00000003</ns1:reportIds>
                 <ns1:paging>
                     <ns1:startIndex>1</ns1:startIndex>
                     <ns1:numberResults>10</ns1:numberResults>
@@ -91,7 +91,7 @@ ReportDefinitionServiceで提供される操作を説明します。
                <ns1:operationSucceeded>true</ns1:operationSucceeded>
                <ns1:reportDefinition>
                   <ns1:reportId>10000000003</ns1:reportId>
-                  <ns1:accountId>200000001</ns1:accountId>
+                  <ns1:accountId>00000001</ns1:accountId>
                   <ns1:reportName>test</ns1:reportName>
                   <ns1:reportType>ACCOUNT</ns1:reportType>
                   <ns1:dateRangeType>CUSTOM_DATE</ns1:dateRangeType>
@@ -130,49 +130,26 @@ ReportDefinitionServiceで提供される操作を説明します。
             <ns1:values>
                <ns1:operationSucceeded>true</ns1:operationSucceeded>
                <ns1:reportDefinition>
-                  <ns1:reportId>11522</ns1:reportId>
-                  <ns1:accountId>100000001</ns1:accountId>
-                  <ns1:feedFolderIds>10</ns1:feedFolderIds>
-                  <ns1:feedFolderIds>11</ns1:feedFolderIds>
-                  <ns1:reportName>Sample AD_CUSTOMIZERS Report</ns1:reportName>
-                  <ns1:reportType>AD_CUSTOMIZERS</ns1:reportType>
+                  <ns1:reportId>00000005</ns1:reportId>
+                  <ns1:accountId>00000001</ns1:accountId>
+                  <ns1:biddingStrategyIds>2222222222</ns1:biddingStrategyIds>
+                  <ns1:biddingStrategyIds>3333333333</ns1:biddingStrategyIds>
+                  <ns1:reportName>Sample BID_STRATEGY Report Modify</ns1:reportName>
+                  <ns1:reportType>BID_STRATEGY</ns1:reportType>
                   <ns1:dateRangeType>CUSTOM_DATE</ns1:dateRangeType>
                   <ns1:dateRange>
-                     <ns1:startDate>20150401</ns1:startDate>
-                     <ns1:endDate>20150630</ns1:endDate>
+                     <ns1:startDate>20141201</ns1:startDate>
+                     <ns1:endDate>20150110</ns1:endDate>
                   </ns1:dateRange>
-                  <ns1:segments>CONVERSIONNAME</ns1:segments>
-                  <ns1:segments>DAY</ns1:segments>
-                  <ns1:segments>DAYOFWEEK</ns1:segments>
-                  <ns1:segments>DEVICE</ns1:segments>
-                  <ns1:segments>MONTH</ns1:segments>
-                  <ns1:segments>MONTHOFYEAR</ns1:segments>
-                  <ns1:segments>NETWORK</ns1:segments>
-                  <ns1:segments>OBJECTIVEOFCONVERSIONTRACKING</ns1:segments>
-                  <ns1:segments>QUARTER</ns1:segments>
-                  <ns1:segments>WEEK</ns1:segments>
-                  <ns1:segments>YEAR</ns1:segments>
-                  <ns1:sort>+FEEDID</ns1:sort>
-                  <ns1:fields>ADGROUPID</ns1:fields>
-                  <ns1:fields>ADGROUPNAME</ns1:fields>
-                  <ns1:fields>ADID</ns1:fields>
-                  <ns1:fields>ADNAME</ns1:fields>
+                  <ns1:sort>+BIDSTRATEGYNAME</ns1:sort>
                   <ns1:fields>AVERAGECPC</ns1:fields>
                   <ns1:fields>AVERAGECPM</ns1:fields>
                   <ns1:fields>AVERAGEPOSITION</ns1:fields>
-                  <ns1:fields>CAMPAIGNID</ns1:fields>
-                  <ns1:fields>CAMPAIGNNAME</ns1:fields>
                   <ns1:fields>CLICKS</ns1:fields>
                   <ns1:fields>COST</ns1:fields>
                   <ns1:fields>COSTTOTALCONVERSIONS</ns1:fields>
                   <ns1:fields>COSTUNIQUECONVERSIONS</ns1:fields>
                   <ns1:fields>CTR</ns1:fields>
-                  <ns1:fields>EDITORIALSTATUS</ns1:fields>
-                  <ns1:fields>FEEDID</ns1:fields>
-                  <ns1:fields>FEEDITEMATTRIBUTES</ns1:fields>
-                  <ns1:fields>FEEDITEMENDDATE</ns1:fields>
-                  <ns1:fields>FEEDITEMID</ns1:fields>
-                  <ns1:fields>FEEDITEMSTARTDATE</ns1:fields>
                   <ns1:fields>IMPRESSIONS</ns1:fields>
                   <ns1:fields>REVENUETOTALCONVERSIONS</ns1:fields>
                   <ns1:fields>REVENUEUNIQUECONVERSIONS</ns1:fields>
@@ -181,15 +158,35 @@ ReportDefinitionServiceで提供される操作を説明します。
                   <ns1:fields>TOTALREVENUE</ns1:fields>
                   <ns1:fields>UNIQUECONVERSIONRATE</ns1:fields>
                   <ns1:fields>UNIQUECONVERSIONS</ns1:fields>
+                  <ns1:fields>BIDSTRATEGYID</ns1:fields>
+                  <ns1:fields>BIDSTRATEGYNAME</ns1:fields>
+                  <ns1:fields>BIDSTRATEGYTYPE</ns1:fields>
+                  <ns1:fields>BIDSTRATEGYSTATUS</ns1:fields>
+                  <ns1:fields>ADGROUPCOUNT</ns1:fields>
+                  <ns1:fields>CAMPAIGNCOUNT</ns1:fields>
+                  <ns1:fields>KEYWORDCOUNT</ns1:fields>
+                  <ns1:fields>TARGETSEARCHPAGELOCATION</ns1:fields>
+                  <ns1:fields>BIDAUTOMATION</ns1:fields>
+                  <ns1:fields>BIDMULTIPLIEROFTARGETPAGELOCATION</ns1:fields>
+                  <ns1:fields>LIMITEDBUDGETS</ns1:fields>
+                  <ns1:fields>LOWQUALITYKEYWORDS</ns1:fields>
+                  <ns1:fields>UPPERBIDLIMITOFTARGETPAGELOCATION</ns1:fields>
+                  <ns1:fields>TARGETCPA</ns1:fields>
+                  <ns1:fields>UPPERBIDLIMITOFTARGETCPA</ns1:fields>
+                  <ns1:fields>LOWERBIDLIMITOFTARGETCPA</ns1:fields>
+                  <ns1:fields>TARGETROAS</ns1:fields>
+                  <ns1:fields>UPPERBIDLIMITOFTARGETROAS</ns1:fields>
+                  <ns1:fields>LOWERBIDLIMITOFTARGETROAS</ns1:fields>
+                  <ns1:fields>UPPERBIDLIMITOFMAXIMIZECLICKS</ns1:fields>
                   <ns1:format>CSV</ns1:format>
                   <ns1:encode>UTF-8</ns1:encode>
                   <ns1:zip>OFF</ns1:zip>
                   <ns1:lang>EN</ns1:lang>
                   <ns1:frequency>SPECIFYDAY</ns1:frequency>
-                  <ns1:specifyDay>28</ns1:specifyDay>
+                  <ns1:specifyDay>10</ns1:specifyDay>
                   <ns1:addTemplate>YES</ns1:addTemplate>
                </ns1:reportDefinition>
-           </ns1:values>
+            </ns1:values>
          </ns1:rval>
       </ns1:getResponse>
    </SOAP-ENV:Body>
@@ -208,20 +205,22 @@ ReportDefinitionServiceで提供される操作を説明します。
 ＜リクエストサンプル＞
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<soapenv:Envelope
- xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
- xmlns:ns1="http://ss.yahooapis.jp/V5">
+<soapenv:Envelope 
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+xmlns:ns1="http://ss.yahooapis.jp/V5">
    <soapenv:Header>
       <ns1:RequestHeader>
-         <ns1:license>xxxxxxxxxxxxxxx</ns1:license>
-         <ns1:apiAccountId>xxxxxxxxxxxxxxxxxx</ns1:apiAccountId>
+         <ns1:license>xxxx-xxxx-xxxx-xxxx</ns1:license>
+         <ns1:apiAccountId>xxxx-xxxx-xxxx-xxxx</ns1:apiAccountId>
          <ns1:apiAccountPassword>passwd</ns1:apiAccountPassword>
-         <ns1:accountId>100000001</ns1:accountId>
+         <ns1:accountId>00000001</ns1:accountId>
+         <ns1:onBehalfOfAccountId>xxxxxxxxxxxxxx</ns1:onBehalfOfAccountId>
+         <ns1:onBehalfOfPassword>passwd2</ns1:onBehalfOfPassword>
       </ns1:RequestHeader>
    </soapenv:Header>
    <soapenv:Body>
       <ns1:getReportFields>
-         <ns1:accountId>10000000001</ns1:accountId>
+         <ns1:accountId>00000001</ns1:accountId>
          <ns1:reportType>FEED_ITEM</ns1:reportType>
          <ns1:lang>EN</ns1:lang>
       </ns1:getReportFields>
@@ -238,8 +237,7 @@ ReportDefinitionServiceで提供される操作を説明します。
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <SOAP-ENV:Envelope 
- xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" 
- xmlns:ns1="http://ss.yahooapis.jp/V5">
+xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://ss.yahooapis.jp/V5">
    <SOAP-ENV:Header>
       <ns1:ResponseHeader>
          <ns1:service>ReportDefinitionService</ns1:service>
@@ -515,8 +513,8 @@ ReportDefinitionServiceで提供される操作を説明します。
  xmlns:ns1="http://ss.yahooapis.jp/V5">
    <soapenv:Header>
       <ns1:RequestHeader>
-         <ns1:license>xxxxxxxxxxxxxxx</ns1:license>
-         <ns1:apiAccountId>xxxxxxxxxxxxxxxxxx</ns1:apiAccountId>
+         <ns1:license>xxxx-xxxx-xxxx-xxxx</ns1:license>
+         <ns1:apiAccountId>xxxx-xxxx-xxxx-xxxx</ns1:apiAccountId>
          <ns1:apiAccountPassword>passwd</ns1:apiAccountPassword>
       </ns1:RequestHeader>
    </soapenv:Header>
@@ -524,50 +522,27 @@ ReportDefinitionServiceで提供される操作を説明します。
       <ns1:mutate>
          <ns1:operations>
             <ns1:operator>ADD</ns1:operator>
-            <ns1:accountId>100000001</ns1:accountId>
+            <ns1:accountId>00000001</ns1:accountId>
             <ns1:operand>
-               <ns1:accountId>100000001</ns1:accountId>
-               <ns1:feedFolderIds>10</ns1:feedFolderIds>
-               <ns1:feedFolderIds>11</ns1:feedFolderIds>
-               <ns1:reportName>Sample AD_CUSTOMIZERS Report　</ns1:reportName>
-               <ns1:reportType>AD_CUSTOMIZERS</ns1:reportType>
+               <ns1:accountId>00000001</ns1:accountId>
+               <ns1:biddingStrategyIds>2222222222</ns1:biddingStrategyIds>
+               <ns1:biddingStrategyIds>3333333333</ns1:biddingStrategyIds>
+               <ns1:reportName>Sample BID_STRATEGY Report</ns1:reportName>
+               <ns1:reportType>BID_STRATEGY</ns1:reportType>
                <ns1:dateRangeType>CUSTOM_DATE</ns1:dateRangeType>
                <ns1:dateRange>
-                  <ns1:startDate>20150401</ns1:startDate>
-                  <ns1:endDate>20150630</ns1:endDate>
+                  <ns1:startDate>20141201</ns1:startDate>
+                  <ns1:endDate>20150110</ns1:endDate>
                </ns1:dateRange>
-               <ns1:segments>CONVERSIONNAME</ns1:segments>
-               <ns1:segments>DAY</ns1:segments>
-               <ns1:segments>DAYOFWEEK</ns1:segments>
-               <ns1:segments>DEVICE</ns1:segments>
-               <ns1:segments>MONTH</ns1:segments>
-               <ns1:segments>MONTHOFYEAR</ns1:segments>
-               <ns1:segments>NETWORK</ns1:segments>
-               <ns1:segments>OBJECTIVEOFCONVERSIONTRACKING　</ns1:segments>
-               <ns1:segments>QUARTER</ns1:segments>
-               <ns1:segments>WEEK</ns1:segments>
-               <ns1:segments>YEAR</ns1:segments>
-               <ns1:sort>+FEEDID</ns1:sort>
-               <ns1:fields>ADGROUPID</ns1:fields>
-               <ns1:fields>ADGROUPNAME</ns1:fields>
-               <ns1:fields>ADID</ns1:fields>
-               <ns1:fields>ADNAME</ns1:fields>
+               <ns1:sort>+BIDSTRATEGYNAME</ns1:sort>
                <ns1:fields>AVERAGECPC</ns1:fields>
                <ns1:fields>AVERAGECPM</ns1:fields>
                <ns1:fields>AVERAGEPOSITION</ns1:fields>
-               <ns1:fields>CAMPAIGNID</ns1:fields>
-               <ns1:fields>CAMPAIGNNAME</ns1:fields>
                <ns1:fields>CLICKS</ns1:fields>
                <ns1:fields>COST</ns1:fields>
                <ns1:fields>COSTTOTALCONVERSIONS</ns1:fields>
                <ns1:fields>COSTUNIQUECONVERSIONS</ns1:fields>
                <ns1:fields>CTR</ns1:fields>
-               <ns1:fields>EDITORIALSTATUS</ns1:fields>
-               <ns1:fields>FEEDID</ns1:fields>
-               <ns1:fields>FEEDITEMATTRIBUTES</ns1:fields>
-               <ns1:fields>FEEDITEMENDDATE</ns1:fields>
-               <ns1:fields>FEEDITEMID</ns1:fields>
-               <ns1:fields>FEEDITEMSTARTDATE</ns1:fields>
                <ns1:fields>IMPRESSIONS</ns1:fields>
                <ns1:fields>REVENUETOTALCONVERSIONS</ns1:fields>
                <ns1:fields>REVENUEUNIQUECONVERSIONS</ns1:fields>
@@ -576,6 +551,26 @@ ReportDefinitionServiceで提供される操作を説明します。
                <ns1:fields>TOTALREVENUE</ns1:fields>
                <ns1:fields>UNIQUECONVERSIONRATE</ns1:fields>
                <ns1:fields>UNIQUECONVERSIONS</ns1:fields>
+               <ns1:fields>BIDSTRATEGYID</ns1:fields>
+               <ns1:fields>BIDSTRATEGYNAME</ns1:fields>
+               <ns1:fields>BIDSTRATEGYTYPE</ns1:fields>
+               <ns1:fields>BIDSTRATEGYSTATUS</ns1:fields>
+               <ns1:fields>ADGROUPCOUNT</ns1:fields>
+               <ns1:fields>CAMPAIGNCOUNT</ns1:fields>
+               <ns1:fields>KEYWORDCOUNT</ns1:fields>
+               <ns1:fields>TARGETSEARCHPAGELOCATION</ns1:fields>
+               <ns1:fields>BIDAUTOMATION</ns1:fields>
+               <ns1:fields>BIDMULTIPLIEROFTARGETPAGELOCATION</ns1:fields>
+               <ns1:fields>LIMITEDBUDGETS</ns1:fields>
+               <ns1:fields>LOWQUALITYKEYWORDS</ns1:fields>
+               <ns1:fields>UPPERBIDLIMITOFTARGETPAGELOCATION</ns1:fields>
+               <ns1:fields>TARGETCPA</ns1:fields>
+               <ns1:fields>UPPERBIDLIMITOFTARGETCPA</ns1:fields>
+               <ns1:fields>LOWERBIDLIMITOFTARGETCPA</ns1:fields>
+               <ns1:fields>TARGETROAS</ns1:fields>
+               <ns1:fields>UPPERBIDLIMITOFTARGETROAS</ns1:fields>
+               <ns1:fields>LOWERBIDLIMITOFTARGETROAS</ns1:fields>
+               <ns1:fields>UPPERBIDLIMITOFMAXIMIZECLICKS</ns1:fields>
                <ns1:format>CSV</ns1:format>
                <ns1:encode>UTF-8</ns1:encode>
                <ns1:zip>OFF</ns1:zip>
@@ -612,54 +607,31 @@ ReportDefinitionServiceで提供される操作を説明します。
    <SOAP-ENV:Body>
       <ns1:mutateResponse>
          <ns1:rval>
-            <ns1:ListReturnValue.Type>ReportDefinitionReturnValue</ns1:ListReturn　Value.Type>
+            <ns1:ListReturnValue.Type>ReportDefinitionReturnValue</ns1:ListReturnValue.Type>
             <ns1:Operation.Type>ADD</ns1:Operation.Type>
             <ns1:values>
                <ns1:operationSucceeded>true</ns1:operationSucceeded>
                <ns1:reportDefinition>
-                  <ns1:reportId>11522</ns1:reportId>
-                  <ns1:accountId>100000001</ns1:accountId>
-                  <ns1:feedFolderIds>10</ns1:feedFolderIds>
-                  <ns1:feedFolderIds>11</ns1:feedFolderIds>
-                  <ns1:reportName>Sample AD_CUSTOMIZERS Report　</ns1:reportName>
-                  <ns1:reportType>AD_CUSTOMIZERS</ns1:reportType>
+                  <ns1:reportId>00000005</ns1:reportId>
+                  <ns1:accountId>00000001</ns1:accountId>
+                  <ns1:biddingStrategyIds>2222222222</ns1:biddingStrategyIds>
+                  <ns1:biddingStrategyIds>3333333333</ns1:biddingStrategyIds>
+                  <ns1:reportName>Sample BID_STRATEGY Report</ns1:reportName>
+                  <ns1:reportType>BID_STRATEGY</ns1:reportType>
                   <ns1:dateRangeType>CUSTOM_DATE</ns1:dateRangeType>
                   <ns1:dateRange>
-                     <ns1:startDate>20150401</ns1:startDate>
-                     <ns1:endDate>20150630</ns1:endDate>
+                     <ns1:startDate>20141201</ns1:startDate>
+                     <ns1:endDate>20150110</ns1:endDate>
                   </ns1:dateRange>
-                  <ns1:segments>CONVERSIONNAME</ns1:segments>
-                  <ns1:segments>DAY</ns1:segments>
-                  <ns1:segments>DAYOFWEEK</ns1:segments>
-                  <ns1:segments>DEVICE</ns1:segments>
-                  <ns1:segments>MONTH</ns1:segments>
-                  <ns1:segments>MONTHOFYEAR</ns1:segments>
-                  <ns1:segments>NETWORK</ns1:segments>
-                  <ns1:segments>OBJECTIVEOFCONVERSIONTRACKING　</ns1:segments>
-                  <ns1:segments>QUARTER</ns1:segments>
-                  <ns1:segments>WEEK</ns1:segments>
-                  <ns1:segments>YEAR</ns1:segments>
-                  <ns1:sort>+FEEDID</ns1:sort>
-                  <ns1:fields>ADGROUPID</ns1:fields>
-                  <ns1:fields>ADGROUPNAME</ns1:fields>
-                  <ns1:fields>ADID</ns1:fields>
-                  <ns1:fields>ADNAME</ns1:fields>
+                  <ns1:sort>+BIDSTRATEGYNAME</ns1:sort>
                   <ns1:fields>AVERAGECPC</ns1:fields>
                   <ns1:fields>AVERAGECPM</ns1:fields>
                   <ns1:fields>AVERAGEPOSITION</ns1:fields>
-                  <ns1:fields>CAMPAIGNID</ns1:fields>
-                  <ns1:fields>CAMPAIGNNAME</ns1:fields>
                   <ns1:fields>CLICKS</ns1:fields>
                   <ns1:fields>COST</ns1:fields>
                   <ns1:fields>COSTTOTALCONVERSIONS</ns1:fields>
                   <ns1:fields>COSTUNIQUECONVERSIONS</ns1:fields>
                   <ns1:fields>CTR</ns1:fields>
-                  <ns1:fields>EDITORIALSTATUS</ns1:fields>
-                  <ns1:fields>FEEDID</ns1:fields>
-                  <ns1:fields>FEEDITEMATTRIBUTES</ns1:fields>
-                  <ns1:fields>FEEDITEMENDDATE</ns1:fields>
-                  <ns1:fields>FEEDITEMID</ns1:fields>
-                  <ns1:fields>FEEDITEMSTARTDATE</ns1:fields>
                   <ns1:fields>IMPRESSIONS</ns1:fields>
                   <ns1:fields>REVENUETOTALCONVERSIONS</ns1:fields>
                   <ns1:fields>REVENUEUNIQUECONVERSIONS</ns1:fields>
@@ -668,6 +640,26 @@ ReportDefinitionServiceで提供される操作を説明します。
                   <ns1:fields>TOTALREVENUE</ns1:fields>
                   <ns1:fields>UNIQUECONVERSIONRATE</ns1:fields>
                   <ns1:fields>UNIQUECONVERSIONS</ns1:fields>
+                  <ns1:fields>BIDSTRATEGYID</ns1:fields>
+                  <ns1:fields>BIDSTRATEGYNAME</ns1:fields>
+                  <ns1:fields>BIDSTRATEGYTYPE</ns1:fields>
+                  <ns1:fields>BIDSTRATEGYSTATUS</ns1:fields>
+                  <ns1:fields>ADGROUPCOUNT</ns1:fields>
+                  <ns1:fields>CAMPAIGNCOUNT</ns1:fields>
+                  <ns1:fields>KEYWORDCOUNT</ns1:fields>
+                  <ns1:fields>TARGETSEARCHPAGELOCATION</ns1:fields>
+                  <ns1:fields>BIDAUTOMATION</ns1:fields>
+                  <ns1:fields>BIDMULTIPLIEROFTARGETPAGELOCATION</ns1:fields>
+                  <ns1:fields>LIMITEDBUDGETS</ns1:fields>
+                  <ns1:fields>LOWQUALITYKEYWORDS</ns1:fields>
+                  <ns1:fields>UPPERBIDLIMITOFTARGETPAGELOCATION</ns1:fields>
+                  <ns1:fields>TARGETCPA</ns1:fields>
+                  <ns1:fields>UPPERBIDLIMITOFTARGETCPA</ns1:fields>
+                  <ns1:fields>LOWERBIDLIMITOFTARGETCPA</ns1:fields>
+                  <ns1:fields>TARGETROAS</ns1:fields>
+                  <ns1:fields>UPPERBIDLIMITOFTARGETROAS</ns1:fields>
+                  <ns1:fields>LOWERBIDLIMITOFTARGETROAS</ns1:fields>
+                  <ns1:fields>UPPERBIDLIMITOFMAXIMIZECLICKS</ns1:fields>
                   <ns1:format>CSV</ns1:format>
                   <ns1:encode>UTF-8</ns1:encode>
                   <ns1:zip>OFF</ns1:zip>
@@ -698,10 +690,10 @@ ReportDefinitionServiceで提供される操作を説明します。
  xmlns:ns1="http://ss.yahooapis.jp/V5">
    <soapenv:Header>
        <ns1:RequestHeader>
-            <ns1:license>xxxxxxxxxxxxxxx</ns1:license>
-            <ns1:apiAccountId>xxxxxxxxxxxxxxxxxx</ns1:apiAccountId>
+            <ns1:license>xxxx-xxxx-xxxx-xxxx</ns1:license>
+            <ns1:apiAccountId>xxxx-xxxx-xxxx-xxxx</ns1:apiAccountId>
             <ns1:apiAccountPassword>passwd</ns1:apiAccountPassword>
-            <ns1:accountId>100000001</ns1:accountId>
+            <ns1:accountId>00000001</ns1:accountId>
             <ns1:onBehalfOfAccountId>xxxxxxxxxxxxxx</ns1:onBehalfOfAccountId>
             <ns1:onBehalfOfPassword>passwd2</ns1:onBehalfOfPassword>
         </ns1:RequestHeader>
@@ -710,11 +702,11 @@ ReportDefinitionServiceで提供される操作を説明します。
       <ns1:mutate>
          <ns1:operations>
             <ns1:operator>SET</ns1:operator>
-            <ns1:accountId>100000001</ns1:accountId>
+            <ns1:accountId>00000001</ns1:accountId>
             <ns1:operand>
-              <ns1:reportId>11522</ns1:reportId>
-               <ns1:accountId>100000001</ns1:accountId>
-                <ns1:reportName>Sample AD_CUSTOMIZERS Report Modify</ns1:reportName>
+              <ns1:reportId>00000005</ns1:reportId>
+               <ns1:accountId>00000001</ns1:accountId>
+                <ns1:reportName>Sample BID_STRATEGY Report Modify</ns1:reportName>
               <ns1:frequency>SPECIFYDAY</ns1:frequency>
                <ns1:specifyDay>10</ns1:specifyDay>
             </ns1:operand>
@@ -751,49 +743,26 @@ ReportDefinitionServiceで提供される操作を説明します。
             <ns1:values>
                <ns1:operationSucceeded>true</ns1:operationSucceeded>
                <ns1:reportDefinition>
-                  <ns1:reportId>11522</ns1:reportId>
-                  <ns1:accountId>100000001</ns1:accountId>
-                  <ns1:feedFolderIds>10</ns1:feedFolderIds>
-                  <ns1:feedFolderIds>11</ns1:feedFolderIds>
-                  <ns1:reportName>Sample AD_CUSTOMIZERS Report Modify</ns1:reportName>
-                  <ns1:reportType>AD_CUSTOMIZERS</ns1:reportType>
+                  <ns1:reportId>00000005</ns1:reportId>
+                  <ns1:accountId>00000001</ns1:accountId>
+                  <ns1:biddingStrategyIds>2222222222</ns1:biddingStrategyIds>
+                  <ns1:biddingStrategyIds>3333333333</ns1:biddingStrategyIds>
+                  <ns1:reportName>Sample BID_STRATEGY Report Modify</ns1:reportName>
+                  <ns1:reportType>BID_STRATEGY</ns1:reportType>
                   <ns1:dateRangeType>CUSTOM_DATE</ns1:dateRangeType>
                   <ns1:dateRange>
-                     <ns1:startDate>20150401</ns1:startDate>
-                     <ns1:endDate>20150630</ns1:endDate>
+                     <ns1:startDate>20141201</ns1:startDate>
+                     <ns1:endDate>20150110</ns1:endDate>
                   </ns1:dateRange>
-                  <ns1:segments>CONVERSIONNAME</ns1:segments>
-                  <ns1:segments>DAY</ns1:segments>
-                  <ns1:segments>DAYOFWEEK</ns1:segments>
-                  <ns1:segments>DEVICE</ns1:segments>
-                  <ns1:segments>MONTH</ns1:segments>
-                  <ns1:segments>MONTHOFYEAR</ns1:segments>
-                  <ns1:segments>NETWORK</ns1:segments>
-                  <ns1:segments>OBJECTIVEOFCONVERSIONTRACKING</ns1:segments>
-                  <ns1:segments>QUARTER</ns1:segments>
-                  <ns1:segments>WEEK</ns1:segments>
-                  <ns1:segments>YEAR</ns1:segments>
-                  <ns1:sort>+FEEDID</ns1:sort>
-                  <ns1:fields>ADGROUPID</ns1:fields>
-                  <ns1:fields>ADGROUPNAME</ns1:fields>
-                  <ns1:fields>ADID</ns1:fields>
-                  <ns1:fields>ADNAME</ns1:fields>
+                  <ns1:sort>+BIDSTRATEGYNAME</ns1:sort>
                   <ns1:fields>AVERAGECPC</ns1:fields>
                   <ns1:fields>AVERAGECPM</ns1:fields>
                   <ns1:fields>AVERAGEPOSITION</ns1:fields>
-                  <ns1:fields>CAMPAIGNID</ns1:fields>
-                  <ns1:fields>CAMPAIGNNAME</ns1:fields>
                   <ns1:fields>CLICKS</ns1:fields>
                   <ns1:fields>COST</ns1:fields>
                   <ns1:fields>COSTTOTALCONVERSIONS</ns1:fields>
                   <ns1:fields>COSTUNIQUECONVERSIONS</ns1:fields>
                   <ns1:fields>CTR</ns1:fields>
-                  <ns1:fields>EDITORIALSTATUS</ns1:fields>
-                  <ns1:fields>FEEDID</ns1:fields>
-                  <ns1:fields>FEEDITEMATTRIBUTES</ns1:fields>
-                  <ns1:fields>FEEDITEMENDDATE</ns1:fields>
-                  <ns1:fields>FEEDITEMID</ns1:fields>
-                  <ns1:fields>FEEDITEMSTARTDATE</ns1:fields>
                   <ns1:fields>IMPRESSIONS</ns1:fields>
                   <ns1:fields>REVENUETOTALCONVERSIONS</ns1:fields>
                   <ns1:fields>REVENUEUNIQUECONVERSIONS</ns1:fields>
@@ -802,6 +771,26 @@ ReportDefinitionServiceで提供される操作を説明します。
                   <ns1:fields>TOTALREVENUE</ns1:fields>
                   <ns1:fields>UNIQUECONVERSIONRATE</ns1:fields>
                   <ns1:fields>UNIQUECONVERSIONS</ns1:fields>
+                  <ns1:fields>BIDSTRATEGYID</ns1:fields>
+                  <ns1:fields>BIDSTRATEGYNAME</ns1:fields>
+                  <ns1:fields>BIDSTRATEGYTYPE</ns1:fields>
+                  <ns1:fields>BIDSTRATEGYSTATUS</ns1:fields>
+                  <ns1:fields>ADGROUPCOUNT</ns1:fields>
+                  <ns1:fields>CAMPAIGNCOUNT</ns1:fields>
+                  <ns1:fields>KEYWORDCOUNT</ns1:fields>
+                  <ns1:fields>TARGETSEARCHPAGELOCATION</ns1:fields>
+                  <ns1:fields>BIDAUTOMATION</ns1:fields>
+                  <ns1:fields>BIDMULTIPLIEROFTARGETPAGELOCATION</ns1:fields>
+                  <ns1:fields>LIMITEDBUDGETS</ns1:fields>
+                  <ns1:fields>LOWQUALITYKEYWORDS</ns1:fields>
+                  <ns1:fields>UPPERBIDLIMITOFTARGETPAGELOCATION</ns1:fields>
+                  <ns1:fields>TARGETCPA</ns1:fields>
+                  <ns1:fields>UPPERBIDLIMITOFTARGETCPA</ns1:fields>
+                  <ns1:fields>LOWERBIDLIMITOFTARGETCPA</ns1:fields>
+                  <ns1:fields>TARGETROAS</ns1:fields>
+                  <ns1:fields>UPPERBIDLIMITOFTARGETROAS</ns1:fields>
+                  <ns1:fields>LOWERBIDLIMITOFTARGETROAS</ns1:fields>
+                  <ns1:fields>UPPERBIDLIMITOFMAXIMIZECLICKS</ns1:fields>
                   <ns1:format>CSV</ns1:format>
                   <ns1:encode>UTF-8</ns1:encode>
                   <ns1:zip>OFF</ns1:zip>
@@ -832,10 +821,10 @@ ReportDefinitionServiceで提供される操作を説明します。
  xmlns:ns1="http://ss.yahooapis.jp/V5">
     <SOAP-ENV:Header>
         <ns1:RequestHeader>
-            <ns1:license>xxxxxxxxxxxxxxx</ns1:license>
-            <ns1:apiAccountId>xxxxxxxxxxxxxxxxxx</ns1:apiAccountId>
+            <ns1:license>xxxx-xxxx-xxxx-xxxx</ns1:license>
+            <ns1:apiAccountId>xxxx-xxxx-xxxx-xxxx</ns1:apiAccountId>
             <ns1:apiAccountPassword>passwd</ns1:apiAccountPassword>
-            <ns1:accountId>100000001</ns1:accountId>
+            <ns1:accountId>00000001</ns1:accountId>
             <ns1:onBehalfOfAccountId>xxxxxxxxxxxxxx</ns1:onBehalfOfAccountId>
             <ns1:onBehalfOfPassword>passwd2</ns1:onBehalfOfPassword>
         </ns1:RequestHeader>
@@ -844,9 +833,9 @@ ReportDefinitionServiceで提供される操作を説明します。
         <ns1:mutate>
             <ns1:operations>
                 <ns1:operator>REMOVE</ns1:operator>
-                <ns1:accountId>1000000001</ns1:accountId>
+                <ns1:accountId>00000001</ns1:accountId>
                 <ns1:operand>
-                    <ns1:reportId>123456789</ns1:reportId>
+                    <ns1:reportId>00000005</ns1:reportId>
                 </ns1:operand>
             </ns1:operations>
         </ns1:mutate>

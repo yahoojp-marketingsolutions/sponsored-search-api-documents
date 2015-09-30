@@ -1,10 +1,10 @@
 # DictionaryService
-DictionaryServiceは、審査否認理由と地域情報の一覧を提供します。
+DictionaryServiceは、EditorialReason（審査否認理由）と地域情報の一覧を提供します。
 #### WSDL
 | environment | url |
 |---|---|
-| production  | https://ss.yahooapis.jp/services/V5.2/DictionaryService?wsdl|
-| sandbox  | https://sandbox.ss.yahooapis.jp/services/V5.2/DictionaryService?wsdl|
+| production  | https://ss.yahooapis.jp/services/V5.1/DictionaryService?wsdl|
+| sandbox  | https://sandbox.ss.yahooapis.jp/services/V5.1/DictionaryService?wsdl|
 #### Namespace
 http://ss.yahooapis.jp/V5
 #### サービス概要

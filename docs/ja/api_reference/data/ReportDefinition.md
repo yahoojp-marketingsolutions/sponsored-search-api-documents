@@ -12,7 +12,6 @@ ReportDefinitionオブジェクトは、レポート定義を表します。
 | kwIds[]| xsd:long| キーワードIDの配列です。| Opt| ─| ─ |
 | adIds[]| xsd:long| 広告IDの配列です。| Opt| ─| ─ |
 | feedItemIds[]| xsd:long| FeedItem情報のIDです。| Opt| ─| ─ |
-| feedFolderIds[]| xsd:long| Feedフォルダ情報のIDです。| Opt| ─| ─ |
 | biddingStrategyIds[]| xsd:long| 自動入札IDです。| Opt| ─| ─ |
 | reportName| xsd:string| ユーザーにより設定されるレポート名です。| Req| Opt| ─ |
 | reportType| enum <a href="../data/ReportType.md">ReportType</a>| レポートの種類です。| Req| ─| ─ |

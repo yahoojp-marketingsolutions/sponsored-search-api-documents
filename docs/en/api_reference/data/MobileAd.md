@@ -1,7 +1,5 @@
 # MobileAd
-Mobile ad excluding for smartphone.
-*mutate(ADD) and mutate(SET) are unavailable due to the closing of mobile (feature phone) ads.
-　get and mutate(REMOVE) are still available to use.
+Mobile ad excluding for smartphone.<br>From May 30th, 2014, mutate(ADD) and mutate(SET) are unavailable due to the closing of mobile (feature phone) ads.<br>get and mutate(REMOVE) are still available to use.
 ### Service
 + [AdGroupAdService](../services/AdGroupAdService.md)
 

@@ -1,6 +1,6 @@
 # MobileAd
-MobileAdオブジェクトは、スマートフォン以外の携帯電話向けの広告です。<br>
-※モバイル向けサービスの提供終了により、mutate(ADD)とmutate(SET)による入稿はご利用いただけません。<br>
+MobileAdオブジェクトは、スマートフォン以外の携帯電話向けの広告です。
+※ 2014年5月30日からモバイル向けサービスの提供終了により、mutate(ADD)とmutate(SET)による入稿はご利用いただけません。
 　なお、getによる取得やmutate(REMOVE)による削除は引き続きご利用いただけます。
 ### Service
 + [AdGroupAdService](../services/AdGroupAdService.md)

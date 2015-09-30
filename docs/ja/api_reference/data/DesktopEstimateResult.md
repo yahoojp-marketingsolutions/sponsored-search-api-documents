@@ -5,7 +5,7 @@ DesktopEstimateResultオブジェクトは、PCのトラフィック予測情報
 
 | フィールド | データ型 | 説明 | 
 |---|---|---|
-| type| enum <a href="../data/EstimateResultType.md">EstimateResultType</a>| デバイス種類です。 |
+| type|enum <a href="../data/EstimateResultType.md">EstimateResultType</a> | デバイス種類です。 |
 | keyword| xsd:string| キーワードです。 |
 | matchType| enum <a href="../data/KeywordMatchType.md">KeywordMatchType</a>| マッチタイプを示します。 |
 | bid| xsd:long| 入札単価です。 |

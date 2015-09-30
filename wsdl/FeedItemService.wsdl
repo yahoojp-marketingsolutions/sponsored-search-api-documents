@@ -12,7 +12,7 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     xmlns:tns="http://ss.yahooapis.jp/V5">
       <annotation>
         <appinfo>
-          <version>5.2.0</version>
+          <version>5.1.0</version>
         </appinfo>
       </annotation>
       <complexType name="SoapHeader">
@@ -36,7 +36,6 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <complexType name="FeedItem">
         <sequence>
           <element maxOccurs="1" minOccurs= "1" name="accountId" type="xsd:long"/>
-          <element maxOccurs="1" minOccurs= "0" name="feedFolderId" type="xsd:long"/>
           <element maxOccurs="1" minOccurs= "0" name="feedItemId" type="xsd:long"/>
           <element maxOccurs="1" minOccurs= "0" name="approvalStatus" type="tns:ApprovalStatus"/>
           <element maxOccurs="unbounded" minOccurs= "0" name="disapprovalReasonCodes" type="xsd:string"/>
@@ -46,9 +45,6 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
           <element maxOccurs="1" minOccurs= "0" name="startDate" type="string"/>
           <element maxOccurs="1" minOccurs= "0" name="endDate" type="string"/>
           <element maxOccurs="1" minOccurs= "0" name="scheduling" type="tns:FeedItemScheduling"/>
-          <element maxOccurs="1" minOccurs= "0" name="targetingCampaign" type="tns:TargetingCampaign"/>
-          <element maxOccurs="1" minOccurs= "0" name="targetingAdGroup" type="tns:TargetingAdGroup"/>
-          <element maxOccurs="1" minOccurs= "0" name="targetingKeyword" type="tns:TargetingKeyword"/>
         </sequence>
       </complexType>
       <complexType name="FeedItemSelector">
@@ -70,7 +66,6 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
         <restriction base="xsd:string">
           <enumeration value="QUICKLINK"/>
           <enumeration value="CALLEXTENSION"/>
-          <enumeration value="AD_CUSTOMIZER"/>
         </restriction>
       </simpleType>
       <simpleType name="ApprovalStatus">
@@ -87,10 +82,6 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
           <enumeration value="LINK_TEXT"/>
           <enumeration value="LINK_URL"/>
           <enumeration value="CALL_PHONE_NUMBER"/>
-          <enumeration value="AD_CUSTOMIZER_INTEGER"/>
-          <enumeration value="AD_CUSTOMIZER_PRICE"/>
-          <enumeration value="AD_CUSTOMIZER_DATE"/>
-          <enumeration value="AD_CUSTOMIZER_STRING"/>
         </restriction>
       </simpleType>
       <simpleType name="DevicePreference">
@@ -101,9 +92,8 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <complexType name="FeedItemAttribute">
         <sequence>
           <element maxOccurs="1" minOccurs="0" name="placeholderField" type="tns:PlaceholderField"/>
-          <element maxOccurs="1" minOccurs="0" name="feedAttributeId" type="xsd:long"/>
           <element maxOccurs="1" minOccurs="0" name="feedAttributeValue" type="xsd:string"/>
-          <element maxOccurs="1" minOccurs="0" name="reviewFeedAttributeValue" type="xsd:string"/>
+          <element maxOccurs="1" minOccurs="0" name="editFeedAttributeValue" type="xsd:string"/>
         </sequence>
       </complexType>
       <complexType name="FeedItemScheduling">
@@ -137,30 +127,6 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
           <enumeration value="FIFTEEN"/>
           <enumeration value="THIRTY"/>
           <enumeration value="FORTY_FIVE"/>
-        </restriction>
-      </simpleType>
-      <complexType name="TargetingCampaign">
-      	<sequence>
-          <element maxOccurs="1" minOccurs="0" name="targetingCampaignId" type="xsd:long"/>
-      	</sequence>
-      </complexType>
-      <complexType name="TargetingAdGroup">
-      	<sequence>
-          <element maxOccurs="1" minOccurs="0" name="targetingAdGroupId" type="xsd:long"/>
-      	</sequence>
-      </complexType>
-      <complexType name="TargetingKeyword">
-      	<sequence>
-          <element maxOccurs="1" minOccurs="0" name="targetingKeywordId" type="xsd:long"/>
-          <element maxOccurs="1" minOccurs="0" name="text" type="xsd:string"/>
-          <element maxOccurs="1" minOccurs="0" name="matchType" type="tns:KeywordMatchType"/>
-      	</sequence>
-      </complexType>
-      <simpleType name="KeywordMatchType">
-        <restriction base="xsd:string">
-          <enumeration value="EXACT"/>
-          <enumeration value="PHRASE"/>
-          <enumeration value="BROAD"/>
         </restriction>
       </simpleType>
       <complexType name="FeedItemPage">
@@ -345,7 +311,7 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   </wsdl:binding>
   <wsdl:service name="FeedItemService">
     <wsdl:port binding="tns:FeedItemServiceSoapBinding" name="FeedItemService">
-      <wsdlsoap:address location="https://USE_ADDRESS_RETURNED_BY_LOCATION_SERVICE/services/V5.2/FeedItemService"/>
+      <wsdlsoap:address location="https://USE_ADDRESS_RETURNED_BY_LOCATION_SERVICE/services/V5.1/FeedItemService"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

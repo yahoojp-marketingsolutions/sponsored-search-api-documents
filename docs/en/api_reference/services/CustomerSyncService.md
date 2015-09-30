@@ -3,8 +3,8 @@ Use this service to import the modified entities of campaign data for specified 
 #### WSDL
 | environment | url |
 |---|---|
-| production  | https://ss.yahooapis.jp/services/V5.2/CustomerSyncService?wsdl|
-| sandbox  | https://sandbox.ss.yahooapis.jp/services/V5.2/CustomerSyncService?wsdl|
+| production  | https://ss.yahooapis.jp/services/V5.1/CustomerSyncService?wsdl|
+| sandbox  | https://sandbox.ss.yahooapis.jp/services/V5.1/CustomerSyncService?wsdl|
 #### Namespace
 http://ss.yahooapis.jp/V5
 #### Overview

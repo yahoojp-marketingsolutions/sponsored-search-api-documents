@@ -8,9 +8,9 @@ AdGroupCriterionSelectorオブジェクトは、操作の対象となる広告�
 | accountId| xsd: long| アカウントIDです。 |
 | campaignIds[]| xsd: long| キャンペーンIDの配列です。 |
 | adGroupIds[]| xsd: long| 広告グループIDの配列です。 |
-| criterionIds[]| xsd: long| クライテリオンIDの配列です。指定しない場合は、広告グループID以下のすべてのクライテリアが含まれます。 |
+| criterionIds[]| xsd: long| クライテリオンIDの配列です。<br>指定しない場合は、広告グループID以下のすべてのクライテリアが含まれます。 |
 | criterionUse| enum <a href="../data/CriterionUse.md">CriterionUse</a>| クライテリアを単価設定可能にするか除外にするかを選択します。 |
-| userStatuses[]| enum <a href="../data/UserStatus.md">UserStatus</a>| ユーザーにより設定される広告の掲載状況です。指定しない場合は、フィルタ条件にすべての掲載状況が含まれます。 |
+| userStatuses[]| enum <a href="../data/UserStatus.md">UserStatus</a>| ユーザーにより設定される広告の掲載状況です。<br>指定しない場合は、フィルタ条件にすべての掲載状況が含まれます。 |
 | biddingStrategyIds[]| xsd:long| 自動入札IDです。 |
 | approvalStatuses[]| enum <a href="../data/ApprovalStatus.md">ApprovalStatus</a>| 審査状況です。 |
 | paging| <a href="../data/Paging.md">Paging</a>| レスポンスとして戻されるページです。 |

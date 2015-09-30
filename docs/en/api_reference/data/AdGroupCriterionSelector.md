@@ -9,7 +9,7 @@ AdGroupCriterionSelector object displays which ad groups criteria to return.
 | campaignIds[]| xsd: long| Campaign ID |
 | adGroupIds[]| xsd: long| AdGroup ID |
 | criterionIds[]| xsd: long| Criterion ID If you omit criterionIds field, return all of criterionIds under the adGroup. |
-| criterionUse| enum <a href="../data/CriterionUse.md">CriterionUse</a>| Selects the criteria to return by the way they are used. e.g. biddable, negative. This field must contain distinct elements. This field must not contain null elements. |
+| criterionUse| enum <a href="../data/CriterionUse.md">CriterionUse</a>| Selects the criteria to return by the way they are used. e.g. biddable, negative. This field must contain distinct elements. This field must not contain null elements.|
 | userStatuses[]| enum <a href="../data/UserStatus.md">UserStatus</a>| Biddable criteria's user status must be one of UserStatus. This field must contain distinct elements. This field must not contain null elements. |
 | biddingStrategyIds[]| xsd:long| Auto bidding ID |
 | approvalStatuses[]| enum <a href="../data/ApprovalStatus.md">ApprovalStatus</a>| Editorial review status. |

@@ -1,6 +1,7 @@
 # EnhancedCpcBiddingScheme [Non-BiddingStrategyService]
 EnhancedCpcBiddingSchemeオブジェクトは、コンバージョン数の最大化の自動入札設定情報を表します。
 （BiddingStrategyService以外用のオブジェクトです。）
+
 ### Service
 + [AdGroupService](../services/AdGroupService.md)
 + [AdGroupCriterionService](../services/AdGroupCriterionService.md)

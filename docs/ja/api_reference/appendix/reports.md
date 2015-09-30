@@ -407,10 +407,10 @@ WEEK                          | 週です。
 YEAR                          | 年です。         
 
 ### レポートセグメント対応表
-各レポートタイプで、設定可能なレポートセグメントの一覧は下記のとおりです。
-
-ACCOUNT | CAMPAIGN | ADGROUP | AD | KEYWORDS | SEARCH_QUERY | DESTINATION_URL | GEO | FEED_ITEM | GEO_TARGET | SCHEDULE_TARGET | DEVICE_TARGET | BID_STRATEGY | AD_CUSTOMIZERS
------------------------------ | -------- | ------- | ---- | -------- | ------------ | --------------- | --- | --------- | ---------- | --------------- | ------------- | ------------ | --------------
+各レポートタイプで、設定可能なレポートセグメントの一覧は下記のとおりです。  
+  
+| ACCOUNT | CAMPAIGN | ADGROUP | AD | KEYWORDS | SEARCH_QUERY | DESTINATION_URL | GEO | FEED_ITEM | GEO_TARGET | SCHEDULE_TARGET | DEVICE_TARGET | BID_STRATEGY
+----------------------------- | ------- | -------- | ------- | ---- | -------- | ------------ | --------------- | --- | --------- | ---------- | --------------- | ------------- | ------------
 ADKEYWORDID                   | ─       | ─        | ─       | ○  | ─        | ─            | ─               | ─   | ─         | ─          | ─               | ─               | ─            
 CITY                          | ─       | ─        | ─       | ─  | ─        | ─            | ─               | ○   | ─         | ─          | ─               | ─               | ─            
 CLICKTYPE                     | ○       | ○        | ○       | ○  | ○        | ─            | ─               | ─   | ○         | ─          | ─               | ─               | ─            

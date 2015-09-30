@@ -17,5 +17,4 @@ AdGroupAdオブジェクトは、広告に関する操作を行うための情�
 | approvalStatus| enum <a href="../data/ApprovalStatus.md">ApprovalStatus</a>| 審査の状況です。| ─| ─| ─ |
 | disapprovalReasonCodes| xsd:string| 審査否認理由のコードです。<br>各コードのその内容は、<a href="../appendix/ed_reasons.md"><span>Editorial Reason Text</span></a>を参照してください。| ─| ─| ─ |
 | ad(notupdatable)| <a href="../data/Ad.md">Ad</a><br><br> inherited <a href="../data/TextAd2.md">TextAd2</a><br> inherited <a href="../data/MobileAd.md">MobileAd</a><br> inherited <a href="../data/AppAd.md">AppAd</a>| 広告です。| Req| ─| ─ |
-| feedFolderId| xsd:long| フィードフォルダIDです。| ─| ─| ─ |
 <a rel="license" href="http://creativecommons.org/licenses/by-nd/2.1/jp/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/2.1/jp/88x31.png" /></a><br />この 作品 は <a rel="license" href="http://creativecommons.org/licenses/by-nd/2.1/jp/">クリエイティブ・コモンズ 表示 - 改変禁止 2.1 日本 ライセンスの下に提供されています。</a>

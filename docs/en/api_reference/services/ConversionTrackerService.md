@@ -7,8 +7,8 @@ Conversion tag will be shared both in Campaign Management Tool and API.<br>
 #### WSDL
 | environment | url |
 |---|---|
-| production  | https://ss.yahooapis.jp/services/V5.2/ConversionTrackerService?wsdl|
-| sandbox  | https://sandbox.ss.yahooapis.jp/services/V5.2/ConversionTrackerService?wsdl|
+| production  | https://ss.yahooapis.jp/services/V5.1/ConversionTrackerService?wsdl|
+| sandbox  | https://sandbox.ss.yahooapis.jp/services/V5.1/ConversionTrackerService?wsdl|
 #### Namespace
 http://ss.yahooapis.jp/V5
 #### Overview

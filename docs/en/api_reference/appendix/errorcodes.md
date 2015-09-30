@@ -148,7 +148,7 @@ Code  | Message  | Description
 20903 | OVER_DATE | Date is after the date range.
 21001 | INVALID_ENUM | Your request contains an enumeration type value that is not valid.
 21301 | INVALID_TARGET | Specified target type cannot be set to the campaign.
-21401 | INVAILD_RELATION | The IDs or cliterionUse you provided is not valid. <br>This error may also result if you have specified an enddate which is earlier than the start date.                             
+21401 | INVAILD_RELATION | The IDs or cliterionUse you provided is not valid.  <br>This error may also result if you have specified an enddate which is earlier than the start date.                            
 21601 | INVALID_URL_FORMAT | The url or destinationUrl in your request appears to be malformed or incomplete. Please check it.
 120001 | REQUIRED | Request does not exist.  
 120003 | INVALID NUMBER FORMAT | The number format is invalid.  
@@ -160,9 +160,9 @@ Code  | Message  | Description
 
 ##### Service
 [CampaignService](/docs/ja/api_reference/services/CampaignService.md)  
-
+  
 Code                     | Message  | Description 
------- | ------------------------------------------ | -------------------------------------------------------
+------------------------ | ----------- | -------------------------------------------------------
 210300 | Double or no settings in Auto bidding.  | Bid type or Auto Bidding ID is not set, or both Bid type and Auto Bidding ID are set.
 210301 | Setting the disabled Auto bidding.  | Designating the Auto bidding that in updating or deleted mode.
 210302 | Conversion related settings in Auto bidding.  | Designating the Auto bidding that is related to conversion.
@@ -179,7 +179,7 @@ Code                     | Message  | Description
 [AdGroupService](/docs/en/api_reference/services/AdGroupService.md)  
 
 Code   | Message  | Description 
------- | ----------------------------------- | ------------------------------------------------------------------
+------ | -------- | ---------------------------------
 210400 | Double setting in Auto bidding.  | Cannot set both Bidding type and Auto bidding ID.  
 210401 | Setting the disabled Auto bidding.  | Designating the Auto bidding that in updating or deleted mode.
 210402 | Invalid conversion tracking.  | Conversion tracking is not valid.
@@ -195,7 +195,7 @@ Code   | Message  | Description
 [AdGroupCriterionService](/docs/en/api_reference/services/AdGroupCriterionService.md) 
 
 Code   | Message  | Description 
------- | ----------------------------------------------------------------- | ------------------------------------------------------------------
+------ | -------- | ---------------------------------
 210500 | Double setting in Auto bidding.  | Cannot set both Bidding type and Auto bidding ID.  
 210501 | Setting the disabled Auto bidding.  | Designating the Auto bidding that in updating or deleted mode.
 210502 | Invalid conversion tracking.  | Conversion tracking is not valid.
@@ -214,8 +214,8 @@ Code   | Message  | Description
 ##### Service
 [BiddingStrategyService](/docs/ja/api_reference/services/BiddingStrategyService.md) 
 
-Code   | Message  | Description 
------- | -------------------------------------------- | -------------------------------------------------------
+Code                   | Message  | Description 
+------------------------ | ----------- | -------------------------------------------------------
 210200 | Auto bidding has been used.  | Cannot delete because Auto Bidding is set to either Campaign, Ad Group, or Keyword.  
 210201 | Minimum value is higher than maximum value.  | Click minimum value is set higher value than maximum value.
 210202 | Auto bidding type does not match.  | Registered Auto Bidding type and requested Auto Bidding type does not match.
@@ -225,23 +225,23 @@ Code   | Message  | Description
 [ReportDefinitionService](/docs/en/api_reference/services/ReportDefinitionService.md)
 
  Code    | Message        | Description              
--------- | ---------------------------- | ------------------------  
-0002 | An internal error has occurred.  | An internal error has occurred. Please try again later. If the problem persists please contact Yahoo! JAPAN API team for assistance. Be sure to include your SOAP Request and Response with your report.
-30001 | TEMPLATE_OVER | The error occurs when you create 31st report definitions. The limitation of report definitions you can store is 30. Please check and remove old report definitions.
+-------- | -------------- | ------------------------  
+0002 | An internal error has occurred.  | An internal error has occurred. Please try again later. If the problem persists please contact Yahoo! Japan API team for assistance. Be sure to include your SOAP Request and Response with your report.
+30001 | TEMPLATE_OVER | The error occurs when you create 31st report definitions. <br>The limitation of report definitions you can store is 30. <br>Please check and remove old report definitions.
 30101 | JOB_OVER_ONETIME | The error occurs when you create 51st ONE TIME report job.<br>The limitation of ONE TIME report job ID you can store is 50.<br>Please check and remove old report job.
 40001 | REQUIRED | The operation is missing a required field or parameter or the value is empty.
 40002 | NOT_LIST | The operation requires array.
 40003 | OVER_LIST_SIZE | Number of elements exceed maximum allowed. Please reduce the size of your request and submit it again.
-40004 | LOWER_LIST_SIZE | Specified list/container must not contain any null elements. <br>You must provide at least one valid object in this operation
+40004 | LOWER_LIST_SIZE | Specified list/container must not contain any null elements.<br>You must provide at least one valid object in this operation
 40011 | INVALID_NUMBER_FORMAT | The number value is incorrect for this parameter.  
 40012 | LOWER_NUMBER | The number is too small.
 40013 | OVER_NUMBER | The number is too big.
 40021 | INVALID_STRING_FORMAT | The string value is incorrect for this parameter.
 40022 | LOWER_STRING | The string has too few characters.
 40023 | OVER_STRING | The string has too many characters.
-40024 | INVALID_URL_FORMAT | The url or destinationUrl in your request appears to be malformed or incomplete. Please check it.
+40024 | INVALID_URL_FORMAT | The url or destinationUrl in your request appears to be malformed or incomplete. <br>Please check it.
 40026 | ILLEGAL_CHARACTER | The name element for this object contains one or more illegal characters.
-40031 | INVALID_DATE_FORMAT | Date is before allowed minimum.Date is after allowed maximum.
+40031 | INVALID_DATE_FORMAT | Date is before allowed minimum. br>Date is after allowed maximum.
 40032 | OVER_DATE_RANGE | Date is outside of allowed range.
 40041 | INVALID_ENUM | Your request contains an enumeration type value that is not valid.
 40051 | INVALID_RELATION | This fault usually occurs when you have specified an enddate which is earlier than the start date.
@@ -253,7 +253,7 @@ Code   | Message  | Description
 [ReportService](/docs/en/api_reference/services/ReportService.md)
 
 Code    | Message        | Description              
--------- | -------------------------------- | ------------------------  
+-------- | -------------- | ------------------------  
 0002 | An internal error has occurred.  | An internal error has occurred. Please try again later. If the problem persists please contact Yahoo! Japan API team for assistance. Be sure to include your SOAP Request and Response with your report.
 40001 | REQUIRED | The operation is missing a required field or parameter or the value is empty.
 40002 | NOT_LIST | The operation requires array.

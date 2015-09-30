@@ -6,7 +6,7 @@ Target report and operation (add, update and remove  report)
 | Field | Data Type | Description | 
 |---|---|---|
 | Operation(inherited)|||
-| operator| enum <a href="./Operator.md">Operator</a>| Operator. This field is required and should not be null. |
+| operator| enum <a href="./Operator.md">Operator</a>| Operator. This field is required and should not be null.|
 | ReportOperation|||
 | accountId| xsd:long|  |
 | operand[]| <a href="./ReportRecord.md">ReportRecord</a>| List of report record. |
