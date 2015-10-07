@@ -203,8 +203,8 @@ ReportDefinitionServiceで提供される操作を説明します。
 | パラメータ | 必須 | 値 | 説明 | 
 |---|---|---|---|
 | accountId | ○ | xsd:long | アカウントIDです。 |
-| reportType | ○ | [enum ReportType](../data/enum ReportType.md) | レポートの形式です。 |
-|lang |  | [enum ReportLang](../data/enum ReportLang.md) | 取得するレポートフィールドの言語を選択します。<br>省略時は、ENになります。 | 
+| reportType | ○ | enum [ReportType](../data/ReportType.md) | レポートの形式です。 |
+|lang |  | enum [ReportLang](../data/ReportLang.md) | 取得するレポートフィールドの言語を選択します。<br>省略時は、ENになります。 | 
 ＜リクエストサンプル＞
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
