@@ -199,8 +199,8 @@ Returns the available report fields for a given report type.
 | Field | Restrictions | Data Type | Description | 
 |---|---|---|---|
 | accountId | Req | xsd:long | Account ID | 
-|reportType | Req | [enum ReportType](../data/enum ReportType.md) | Type of report. |
-| lang |  | [enum ReportLang](../data/enum ReportLang.md) | Specify language for report field. <br>If omit, EN will be specified. | 
+|reportType | Req | enum [ReportType](../data/ReportType.md) | Type of report. |
+| lang |  | enum [ReportLang](../data/ReportLang.md) | Specify language for report field. <br>If omit, EN will be specified. | 
 
 ##### Request Sample
 ```xml
