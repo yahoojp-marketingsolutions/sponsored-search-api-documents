@@ -1,7 +1,7 @@
 # Settings
 Settingsオブジェクトは、キャンペーンの地域ターゲットを格納するコンテナです。
 ### Service
-+ [TrafficEstimatorService](../services/TrafficEstimatorService.md)
++ [CampaignService](../services/CampaignService.md)
 
 | フィールド | データ型 | 説明 | 
 |---|---|---|

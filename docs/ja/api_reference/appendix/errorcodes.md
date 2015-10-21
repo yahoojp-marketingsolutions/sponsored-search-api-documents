@@ -1,6 +1,6 @@
 # SOAPエラーコード
 ### エラー処理概要
-SOAPリクエストが成功した場合、スポンサードサーチ APIは HTTP 200 OKというレスポンスコードとSOAPのレスポンスを返します。 SOAPリクエストの処理中にエラーが発生した場合、スポンサードサーチAPIはエラーコードが含まれるメッセージを返します。詳しくは[Error](/docs/ja/api_reference/data/Error.md), [ErrorDetail](/docs/ja/api_reference/data/ErrorDetail.md)を確認してください。
+SOAPリクエストが成功した場合、スポンサードサーチ APIは HTTP 200 OKというレスポンスコードとSOAPのレスポンスを返します。<br> SOAPリクエストの処理中にエラーが発生した場合、スポンサードサーチAPIはエラーコードが含まれるメッセージを返します。<br>詳しくは[Error](/docs/ja/api_reference/data/Error.md), [ErrorDetail](/docs/ja/api_reference/data/ErrorDetail.md)を確認してください。
 ```xml
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
     <SOAP-ENV:Body>
@@ -64,7 +64,9 @@ SOAPリクエストが成功した場合、スポンサードサーチ APIは HT
 0099 | Out of service.  | メンテナンス中です。APIは利用できません。
 
 #### アカウント管理に関連するエラー
-##### [AccountService](/docs/ja/api_reference/services/AccountService.md)
+##### Service
+[AccountService](/docs/ja/api_reference/services/AccountService.md)
+
 コード                     | メッセージ              | 説明   
 -------------------------- | ----------------------- | -----------------------------------------------------------
 20110005 | INVALID VALUE | 無効なアカウントIDです。
@@ -96,7 +98,8 @@ SOAPリクエストが成功した場合、スポンサードサーチ APIは HT
 
 #### 請求に関連するエラー
 ##### Service
-##### [BalanceService](/docs/ja/api_reference/services/BalanceService.md)  
+[BalanceService](/docs/ja/api_reference/services/BalanceService.md)  
+
  コード  | メッセージ | 説明              
 -------- | ---------- | ------------------------  
 20410003 | INPUT REQUIRED | アカウントIDは必須です。  
@@ -107,7 +110,8 @@ SOAPリクエストが成功した場合、スポンサードサーチ APIは HT
 20410009 | GET BALANCE FAILED | アカウント残高の取得に失敗しました。  
 
 #### キャンペーン管理に関連するエラー
-##### [AdGroupAdService](/docs/ja/api_reference/services/AdGroupAdService.md),  [BulkService](/docs/ja/api_reference/services/BulkService.md), [CampaignCriterionService](/docs/ja/api_reference/services/CampaignCriterionService.md),  [CampaignTargetService](/docs/ja/api_reference/services/CampaignTargetService.md), [CustomerSyncService](/docs/ja/api_reference/services/CustomerSyncService.md), [AdGroupBidMultiplierService](/docs/ja/api_reference/services/AdGroupBidMultiplierService.md)
+##### Service
+[AdGroupAdService](/docs/ja/api_reference/services/AdGroupAdService.md),  [BulkService](/docs/ja/api_reference/services/BulkService.md), [CampaignCriterionService](/docs/ja/api_reference/services/CampaignCriterionService.md),  [CampaignTargetService](/docs/ja/api_reference/services/CampaignTargetService.md), [CustomerSyncService](/docs/ja/api_reference/services/CustomerSyncService.md), [AdGroupBidMultiplierService](/docs/ja/api_reference/services/AdGroupBidMultiplierService.md)
 
 コード                   | メッセージ  | 説明 
 ------------------------ | ----------- | -------------------------------------------------------
@@ -314,6 +318,28 @@ SOAPリクエストが成功した場合、スポンサードサーチ APIは HT
 210108 | LOWER NUMBER | 数値が小さすぎます。
 210109 | OVER NUMBER | 数値が大きすぎます。
 210110 | INVALID TARGET | 無効なターゲティングです。
-210111 | Same value has already been registered | 同じ値がすでに登録されています。
-210112 | can not delete a PlatformTarget | ターゲティングは削除できませんでした。
-210103 | can not modify a bidMultiplier | 入札価格調整率を変更することができませんでした。
+
+##### Service
+[CampaignFeedService](/docs/ja/api_reference/services/CampaignFeedService.md)
+
+コード                   | メッセージ  | 説明 
+------------------------ | ----------- | -------------------------------------------------------
+20103 | OVER_LIST_SIZE| 指定した要素数が上限値を超えています。
+120002 | INVALID VALUE| 値が無効です。
+120018 | DUPLICATE VALUE| 値が重複しています。
+120022 | DEACTIVATED| 無効なIDを指定しています。
+120024 | INVALID RELATION| 関係が無効です。
+210103 | UNMATCH PLACEHOLDER TYPE| placeholderTypeとfeedItemIdの組み合わせが正しくありません。
+
+
+##### Service
+[AdGroupFeedService](/docs/ja/api_reference/services/AdGroupFeedService.md)
+
+コード                   | メッセージ  | 説明 
+------------------------ | ----------- | -------------------------------------------------------
+20103 | OVER_LIST_SIZE| 指定した要素数が上限値を超えています。
+120002 | INVALID VALUE| 値が無効です。
+120018 | DUPLICATE VALUE| 値が重複しています。
+120022 | DEACTIVATED| 無効なIDを指定しています。
+120024 | INVALID RELATION| 関係が無効です。
+210103 | UNMATCH PLACEHOLDER TYPE| placeholderTypeとfeedItemIdの組み合わせが正しくありません。

@@ -6,7 +6,7 @@ Auditlogオブジェクトは、操作履歴の情報を表します。
 | フィールド | データ型 | 説明 | 
 |---|---|---|
 | updatedTime| xsd:string| 更新時間です。 |
-| entityType| xsd:string| 変更されたエンティティのタイプです。 |
+| entityType| enum <a href="../data/EntityType.md">EntityType</a>| 変更されたエンティティのタイプです。 |
 | eventType[]| enum <a href="../data/EventType.md">EventType</a>| 変更した時の操作を表します。 |
 | sourceType| enum <a href="../data/SourceType.md">SourceType</a>| 変更が、どのシステムから行われたかを指定します。 |
 | accountId| xsd:long| 変更されたデータのアカウントIDです。 |

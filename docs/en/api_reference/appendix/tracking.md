@@ -1,3 +1,4 @@
+# Tracking Parameters
 Retrieving the information on which type of ads are clicked will be possible from Sponsored Search API tracking parameters. <br>
 This functions can easily confirm the effect of ads, which it may leads to a better advertisement.<br>
 <br>

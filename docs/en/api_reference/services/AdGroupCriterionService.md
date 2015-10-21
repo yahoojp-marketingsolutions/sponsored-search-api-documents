@@ -134,7 +134,7 @@ Adds adgroup criteria.
                 <ns1:campaignId>xxxxxxxx</ns1:campaignId>
                 <ns1:adGroupId>xxxxxxxx</ns1:adGroupId>
                 <ns1:criterionUse>BIDDABLE</ns1:criterionUse>
-                <ns1:operand xsi:type="ns1:NegativeAdGroupCriterion">
+                <ns1:operand xsi:type="ns1:BiddableAdGroupCriterion">
                     <ns1:criterionUse>BIDDABLE</ns1:criterionUse>
                     <ns1:criterion xsi:type="ns1:Keyword">
                         <ns1:type>KEYWORD</ns1:type>
@@ -142,7 +142,7 @@ Adds adgroup criteria.
                         <ns1:matchType>EXACT</ns1:matchType>
                     </ns1:criterion>
                 </ns1:operand>
-                <ns1:operand xsi:type="ns1:NegativeAdGroupCriterion">
+                <ns1:operand xsi:type="ns1:BiddableAdGroupCriterion">
                     <ns1:criterionUse>BIDDABLE</ns1:criterionUse>
                     <ns1:criterion xsi:type="ns1:Keyword">
                         <ns1:type>KEYWORD</ns1:type>
