@@ -18,5 +18,5 @@ Campaignオブジェクトは、キャンペーンの情報を表します。
 | failedBiddingStrategyConfiguration| <a href="../data/BiddingStrategy_Campaign.md">BiddingStrategy</a>| 登録に失敗した自動入札設定です。※失敗時のみレスポンスされます。| ─| ─| ─ |
 | conversionOptimizerEligibility| enum <a href="../data/ConversionOptimizerEligibility.md">ConversionOptimizerEligibility</a>| コンバージョンオプティマイザーが利用可能であるか判定します。| ─| ─| ─ |
 | adServingOptimizationStatus(updatable)| enum <a href="../data/AdServingOptimizationStatus.md">AdServingOptimizationStatus</a>| 広告表示の最適化の設定です。| Opt| Opt| ─ |
-| settings[](updatable)| <a href="./Settings.md">Settings</a><br><br>inherited <a href="./GeoTargetTypeSetting.md">GeoTargetTypeSetting</a><br><br>inherited <a href="./KeywordMatchSetting.md">KeywordMatchSetting</a>| 地域ターゲティングの設定です。| Opt| Opt| ─ |
+| settings[](updatable)| <a href="./Settings_Campaign.md">Settings</a><br><br>inherited <a href="./GeoTargetTypeSetting.md">GeoTargetTypeSetting</a><br><br>inherited <a href="./KeywordMatchSetting.md">KeywordMatchSetting</a>| 地域ターゲティングの設定です。| Opt| Opt| ─ |
 <a rel="license" href="http://creativecommons.org/licenses/by-nd/2.1/jp/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/2.1/jp/88x31.png" /></a><br />この 作品 は <a rel="license" href="http://creativecommons.org/licenses/by-nd/2.1/jp/">クリエイティブ・コモンズ 表示 - 改変禁止 2.1 日本 ライセンスの下に提供されています。</a>

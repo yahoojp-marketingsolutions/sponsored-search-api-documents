@@ -323,3 +323,33 @@ Code    | Message        | Description
 210108 | LOWER NUMBER | Number is too small.
 210109 | OVER NUMBER | Number is too big.
 210110 | INVALID TARGET | Targeting is invalid.
+210111 | Same value has already been registered | Please select different value to register.
+210112 | can not delete a PlatformTarget | Were not able to delete the targeting.
+210103 | can not modify a bidMultiplier | Were not able to change the bid multiplier.
+210126 | Mobile app download cannot connect to Data Auto Insertion. |Connection to Data Auto Insertion has been attempted for Mobile app download.
+
+##### Service
+[CampaignFeedService](/docs/ja/api_reference/services/CampaignFeedService.md)
+
+ Code    | Message        | Description   
+------------------------ | ----------- | -------------------------------------------------------
+20103 | OVER_LIST_SIZE| The element count exceeded the maximum.
+120002 | INVALID VALUE| Value is invalid.
+120018 | DUPLICATE VALUE| Value is overlapped. Please use different value.
+120022 | DEACTIVATED| Invalid ID has been specified.
+120024 | INVALID RELATION| Relation is invalid.
+210103 | UNMATCH PLACEHOLDER TYPE| Inappropriate combination of placeholderType and feedItemId.
+210127 | Mobile app download cannot connect to Feed item.|Connection to Feed item has been attempted for Mobile app download.
+
+##### Service
+[AdGroupFeedService](/docs/ja/api_reference/services/AdGroupFeedService.md)
+
+ Code    | Message        | Description   
+------------------------ | ----------- | -------------------------------------------------------
+20103 | OVER_LIST_SIZE| The element count exceeded the maximum.
+120002 | INVALID VALUE| Value is invalid.
+120018 | DUPLICATE VALUE| Value is overlapped. Please use different value.
+120022 | DEACTIVATED| Invalid ID has been specified.
+120024 | INVALID RELATION| Relation is invalid.
+210103 | UNMATCH PLACEHOLDER TYPE| Inappropriate combination of placeholderType and feedItemId.
+210127 | Mobile app download cannot connect to Feed item.|Connection to Feed item has been attempted for Mobile app download.
